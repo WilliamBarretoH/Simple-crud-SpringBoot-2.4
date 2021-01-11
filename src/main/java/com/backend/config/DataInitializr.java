@@ -1,7 +1,8 @@
 package com.backend.config;
 
-import com.backend.entity.User;
-import com.backend.repository.UserRepository;
+
+import com.backend.domain.entity.User;
+import com.backend.domain.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

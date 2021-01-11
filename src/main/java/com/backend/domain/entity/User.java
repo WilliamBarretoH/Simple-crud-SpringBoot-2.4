@@ -1,9 +1,6 @@
-package com.backend.entity;
+package com.backend.domain.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,8 +8,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-@Setter
-@Getter
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
     @Id
@@ -24,9 +23,6 @@ public class User {
     private String email;
 
     private String password;
-
-    public User() {
-    }
 
     public User(String name, String email, String password) {
         this.name = name;
