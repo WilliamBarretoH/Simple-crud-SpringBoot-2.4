@@ -4,10 +4,12 @@ import com.backend.domain.entity.Pedido;
 import com.backend.domain.repository.PedidoRepository;
 import com.backend.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class PedidoServiceProvider implements PedidoService {
 
     @Autowired

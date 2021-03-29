@@ -21,11 +21,9 @@ public class Pedido {
     private Long id;
 
     @ManyToOne
-    @Column(nullable = false)
     private User user;
 
     @OneToMany
-    @Column(nullable = false)
     private List<Produto> produtos;
 
 
