@@ -2,10 +2,9 @@ package com.backend.domain.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -23,6 +22,9 @@ public class User {
     private String email;
 
     private String password;
+
+    @OneToMany
+    private List<Pedido> pedidos;
 
     public User(String name, String email, String password) {
         this.name = name;

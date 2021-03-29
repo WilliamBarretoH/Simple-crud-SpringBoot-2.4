@@ -1,4 +1,4 @@
-package com.backend.service.interfaces;
+package com.backend.service;
 
 import com.backend.domain.entity.User;
 

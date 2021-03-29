@@ -7,7 +7,7 @@ import com.backend.API.dto.UserDto;
 import com.backend.domain.entity.User;
 
 import com.backend.domain.repository.UserRepository;
-import com.backend.service.interfaces.UserService;
+import com.backend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
