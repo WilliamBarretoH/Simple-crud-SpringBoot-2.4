@@ -18,12 +18,14 @@ public class Pedido {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "pedido_id")
     private Long id;
 
-    @ManyToOne
-    private User user;
+   // @ManyToOne
+    //private User user;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "produto_id")
     private List<Produto> produtos;
 
 

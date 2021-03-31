@@ -16,12 +16,12 @@ public class Produto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "produto_id")
     private Long id;
 
     private String nome;
 
     private double valor;
-
 
 
     public Produto(String nome, double valor) {

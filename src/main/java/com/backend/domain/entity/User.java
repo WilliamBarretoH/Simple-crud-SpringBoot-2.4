@@ -23,8 +23,8 @@ public class User {
 
     private String password;
 
-    @OneToMany
-    private List<Pedido> pedidos;
+    //@OneToMany
+    //private List<Pedido> pedidos;
 
     public User(String name, String email, String password) {
         this.name = name;
