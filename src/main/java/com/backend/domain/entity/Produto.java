@@ -23,6 +23,7 @@ public class Produto {
 
     private double valor;
 
+    private Integer quantidade;
 
     public Produto(String nome, double valor) {
         this.nome = nome;
