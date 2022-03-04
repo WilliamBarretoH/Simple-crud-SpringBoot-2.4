@@ -9,11 +9,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserBuilder {
 
-    private User user;
-
     public User buildUser(UserDto userDto){
 
-        return user = User.builder()
+        return User.builder()
                 .name(userDto.getName())
                 .email(userDto.getEmail())
                 .password(userDto.getPassword())

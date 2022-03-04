@@ -7,7 +7,7 @@ import lombok.Data;
 @Builder
 public class ProdutoDto {
 
-    private Long id;
     private String nome;
     private double valor;
+    private Integer quantidade;
 }

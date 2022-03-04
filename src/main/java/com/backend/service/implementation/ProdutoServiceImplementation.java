@@ -1,4 +1,4 @@
-package com.backend.service.providers;
+package com.backend.service.implementation;
 
 import com.backend.domain.entity.Produto;
 import com.backend.domain.repository.ProdutoRepository;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProdutoServiceProvider implements ProdutoService {
+public class ProdutoServiceImplementation implements ProdutoService {
 
     @Autowired
     private ProdutoRepository produtoRepository;

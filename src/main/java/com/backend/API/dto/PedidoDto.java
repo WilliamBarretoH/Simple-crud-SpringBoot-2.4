@@ -13,6 +13,6 @@ public class PedidoDto {
 
     private Long id;
     //private User user;
-    private List<Produto> produtos;
+    private List<Long> ids_produtos;
 
 }

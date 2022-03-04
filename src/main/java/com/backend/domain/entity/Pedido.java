@@ -24,9 +24,9 @@ public class Pedido {
    // @ManyToOne
     //private User user;
 
-    @OneToMany(cascade = CascadeType.PERSIST)
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "produto_id")
-    private List<Produto> produtos;
+    private List<Long> id_produtos;
 
 
 }

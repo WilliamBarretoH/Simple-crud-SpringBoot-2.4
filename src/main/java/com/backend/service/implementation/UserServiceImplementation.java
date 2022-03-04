@@ -1,4 +1,4 @@
-package com.backend.service.providers;
+package com.backend.service.implementation;
 
 import com.backend.domain.entity.User;
 import com.backend.domain.repository.UserRepository;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserServiceProvider implements UserService {
+public class UserServiceImplementation implements UserService {
 
     @Autowired
     private UserRepository userRepository;
